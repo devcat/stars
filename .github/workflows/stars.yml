@@ -23,4 +23,5 @@ jobs:
         name: 'stargazed commit'
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-        run: 'stargazed --username  "devcat" --token ${GITHUB_TOKEN} --repo "stars" --message "☆ ～(\'▽^人)" --sort'
+        run:
+          stargazed --username  "devcat" --token ${GITHUB_TOKEN} --repo "stars" --message "☆ ～('▽^人)" --sort
